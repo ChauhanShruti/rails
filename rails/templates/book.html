@@ -21,6 +21,7 @@
       
       var x=obj();
       localStorage.setItem(pnr,JSON.stringify(x));
+        localStorage.setItem(document.getElementById('train_no').value,(localStorage.getItem(document.getElementById('train_no').value)-document.getElementById('number_of_seats').value));
         alert("Your ticket has been booked with pnr number: "+pnr);
       
     }
